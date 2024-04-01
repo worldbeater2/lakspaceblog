@@ -80,7 +80,7 @@ const Blogs = ({blogs}) => {
               <Link to={`/blog/${blog.id}`}>
                 <div className="card w-96 bg-base-100 shadow-xl image-full">
                   <figure>
-                    <img src={`http://localhost:1337${blog.attributes.coverImg.data.attributes.url}`} alt="blogimage" />
+                    <img src={`https://api.render.com/deploy/srv-co5k56mv3ddc7392hmo0?key=l-Z5Rr1P67M${blog.attributes.coverImg.data.attributes.url}`} alt="blogimage" />
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title">{blog.attributes.blogTitle}</h2>

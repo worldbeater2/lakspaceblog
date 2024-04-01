@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
 
-let {loading, data, error} = useFetch('http://localhost:1337/api/blogs?populate=*')
+let {loading, data, error} = useFetch('https://api.render.com/deploy/srv-co5k56mv3ddc7392hmo0?key=l-Z5Rr1P67M/blogs?populate=*')
 if(loading) return <p>Loading...</p>
 if(error) return <p>Error!</p>
 console.log(data)
