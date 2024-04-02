@@ -3,7 +3,10 @@ import { BlogContent } from "./pages";
 import Homepage from "./pages/Homepage";
 import { Routes, Route } from "react-router-dom";
 
+
+
 function App() {
+
   let { loading, data, error } = useFetch(
     "https://lakspaceblog.onrender.com/api/blogs?populate=*"
   );

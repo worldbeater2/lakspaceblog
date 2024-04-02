@@ -70,6 +70,8 @@ const Blogs = ({blogs}) => {
   //   },
   // ];
 
+  
+
   return (
     <section className="w-full py-4">
       <div className="mx-auto max-w-[1240px]">
@@ -80,7 +82,9 @@ const Blogs = ({blogs}) => {
               <Link to={`/blog/${blog.id}`}>
                 <div className="card w-96 bg-base-100 shadow-xl image-full">
                   <figure>
-                    <img src={`https://lakspaceblog.onrender.com/api${blog.attributes.coverImg.data.attributes.url}`}alt="blogimage" />
+                  <img src ={`https://lakspaceblog.onrender.com${blog.attributes.coverImg.data.attributes.url}`} 
+                  alt="blogimage" />
+               
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title">{blog.attributes.blogTitle}</h2>

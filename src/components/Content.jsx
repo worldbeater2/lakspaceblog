@@ -97,7 +97,7 @@ const Content = ({blogs}) => {
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 sm:gap-y-8 lg:gap-8 md:gap-8 px-4 sm:pt-16 md:mt-0 ">
           <div className="col-span-2 md:gap-8 lg:gap-8 ">
             <img
-              src={`https://lakspaceblog.onrender.com/api${blog.attributes.coverImg.data.attributes.url}`}
+              src={`https://lakspaceblog.onrender.com${blog.attributes.coverImg.data.attributes.url}`}
               className="object-cover  w-full h-56 rounded-md "
             />
             <h1 className="font-bold my-1 text-2xl pt-4">{blog.attributes.blogTitle}</h1>
