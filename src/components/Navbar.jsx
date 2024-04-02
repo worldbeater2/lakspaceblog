@@ -1,11 +1,12 @@
 import React from "react";
 
 
+
 const Navbar = () => {
   return (
 
     <div className="navbar bg-base-100 w-screen flex items-center   ">
-      <img src="/public/logo.png" className=" w-52
+      <img src="/logo.png" className=" w-52
        h-10 ml-10"></img>
       <ul className="mx-auto ">
 
