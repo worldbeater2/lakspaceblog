@@ -35,13 +35,13 @@ const HomeviewContent = () => {
           </div>
         </div>
       </div>
-      <section className=" p-4 my-7 mx-auto container  justify-center ">
+      <section className=" p-4  mx-auto container  justify-center ">
         {" "}
         <p className="font-navfont text-5xl border-pink-50 border-b-2 mb-10 p-5 text-center">
           -Categories-
         </p>
-        <div className="mx-auto p-5 border-b-2 border-yellow-50">
-          <div className="grid grid-cols-3 gap-0 mb-10">
+        <div className="mx-auto p-5">
+          <div className="grid grid-cols-3 gap-5 mb-10">
             <div className="card w-96 glass">
               <figure>
                 <img
@@ -101,7 +101,7 @@ const HomeviewContent = () => {
                 <p className="text-center text-lg text-black">
                   How to park your car at your garage?
                 </p>
-                <div className="card-actions justify-center  p-2`">
+                <div className="card-actions justify-center  p-2">
                   <button className="btn btn-outline px-10  hover:bg-pink-300  hover:border-pink-300 transition duration-400">
                     Explore
                   </button>
@@ -111,9 +111,9 @@ const HomeviewContent = () => {
           </div>
         </div>
       </section>
-      <section className=" p-4 my-7 mx-auto container  justify-center ">
+      <section className=" p-4 mx-auto container  justify-center ">
         {" "}
-        <p className="font-navfont text-5xl border-green-50 border-b-2 mb-10 pb-7 p-5 text-center">
+        <p className="font-navfont text-5xl border-green-50 border-b-2 mb-10 pb-7  p-5 text-center">
           -Latest Posts-
         </p>
         <div className="grid grid-cols-5 gap-x-7 ">
