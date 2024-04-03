@@ -4,6 +4,7 @@ import BlogPage from "./pages/BlogPage";
 
 import { Routes, Route } from "react-router-dom";
 import Resources from "./pages/Resources";
+import Contact from "./pages/Contact";
 
 function App() {
   let { loading, data, error } = useFetch(
@@ -38,6 +39,8 @@ function App() {
 
       <Route path="/homepage"  element={<Homeview/>}/>
       <Route path="/resources"  element={<Resources/>}/>
+      <Route path="/contact"  element={<Contact/>}/>
+
 
       </Routes>
     </div>

@@ -30,7 +30,7 @@ const Navbar = () => {
         
  
       </ul>
-      <Link className="btn btn-ghost text-lg font-navfont relative hover:bg-pink-300 mr-10 ">
+      <Link to={"/contact"} className="btn btn-ghost text-lg font-navfont relative hover:bg-pink-300 mr-10 ">
         Contact me
       </Link>
 
