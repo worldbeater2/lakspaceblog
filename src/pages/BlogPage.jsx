@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 
-function Homepage({blogs}) {
+function BlogPage({blogs}) {
 
 
   
@@ -20,4 +20,4 @@ function Homepage({blogs}) {
   ];  
 }
 
-export default Homepage;
+export default BlogPage;

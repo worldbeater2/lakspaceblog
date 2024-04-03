@@ -1,4 +1,8 @@
 import React from "react";
+import {Link} from 'react-router-dom';
+import { About, BlogPage, Homeview } from "../pages";
+import Resources from "../pages/Resources";
+
 
 
 
@@ -6,28 +10,29 @@ const Navbar = () => {
   return (
 
     <div className="navbar bg-base-100 w-screen flex items-center   ">
-      <img src="/logo.png" className=" w-52
-       h-10 ml-10"></img>
+    <Link> <img src="/logo.png" className=" w-52
+       h-10 ml-10"></img></Link>
+     
       <ul className="mx-auto ">
 
-        <a className="btn btn-ghost text-lg  hover:bg-pink-300 font-navfont">
+        <Link to={"/homepage"} className="btn btn-ghost text-lg  hover:bg-pink-300 font-navfont">
           Home
-        </a>
-        <a className="btn btn-ghost text-lg font-navfont  hover:bg-pink-300 ">
+        </Link>
+        <Link to={"/about"} className="btn btn-ghost text-lg font-navfont  hover:bg-pink-300 ">
           About me
-        </a>
-        <a className="btn btn-ghost text-lg font-navfont  hover:bg-pink-300 ">
+        </Link>
+        <Link to={"/blogapp"} className="btn btn-ghost text-lg font-navfont  hover:bg-pink-300 ">
           Blog
-        </a>
-        <a className="btn btn-ghost text-lg font-navfont  hover:bg-pink-300 ">
+        </Link>
+        <Link to={"/resources"} className="btn btn-ghost text-lg font-navfont  hover:bg-pink-300 ">
           Resources
-        </a>
+        </Link>
         
  
       </ul>
-      <a className="btn btn-ghost text-lg font-navfont relative hover:bg-pink-300 mr-10 ">
+      <Link className="btn btn-ghost text-lg font-navfont relative hover:bg-pink-300 mr-10 ">
         Contact me
-      </a>
+      </Link>
 
       {/* <div className="md:hidden ">
         <svg
@@ -75,5 +80,7 @@ const Navbar = () => {
     
   );
 };
+
+Navbar.propTypes = {};
 
 export default Navbar;
