@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
 
     <div className="navbar bg-base-100 w-screen flex items-center   ">
-    <Link> <img src="/logo.png" className=" w-52
+    <Link to={"/homepage"}> <img src="/logo.png" className=" w-52
        h-10 ml-10"></img></Link>
      
       <ul className="mx-auto ">
