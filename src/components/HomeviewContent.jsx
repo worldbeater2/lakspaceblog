@@ -1,177 +1,206 @@
 import React from "react";
+import Hero from "./Hero";
+import Displaybar from "./Displaybar";
+import Mentalhealth from "./Mentalhealth";
 
 const HomeviewContent = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden -mt-5">
       <div className="mx-auto w-screen">
-        <div
-          className="hero min-h-screen "
-          style={{
-            backgroundImage: "url(/sel.jpg)",
-          }}
-        >
-          <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-center text-neutral-content">
-            <div className="max-w-3xl">
-              <h1 className="mb-7 mx-auto text-9xl font-bold font-navfont text-pink-100">
-                Lakspace
-              </h1>
-              <p className="my-20 mx-auto text-center text-2xl">
-                A reminder to be{" "}
-                <span className=" font-navfont text-4xl text-pink-400">
-                  grateful
-                </span>
-                , a space to appreciate my{" "}
-                <span className=" font-navfont text-4xl text-green-400">
-                  growth
-                </span>{" "}
-                . Count the little steps, acknowledge little{" "}
-                <span className=" font-navfont text-4xl text-yellow-500">
-                  wins
-                </span>{" "}
-                and you’ll see how far you have come
-              </p>
+        <Hero />
+      </div>
+
+      <div className="carousel carousel-end flex h-[500px] brightness-105 shadow-sm">
+        <div className="carousel-item">
+          <img src="./boat.jpg" alt="Boat" />
+        </div>
+        <div className="carousel-item">
+          <img src="./dog.jpg" alt="Otis" />
+        </div>
+        <div className="carousel-item">
+          <img src="food.jpg" alt="Noodles" />
+        </div>
+        <div className="carousel-item">
+          <img src="./shells.jpg" alt="Shells on a beach" />
+        </div>
+        <div className="carousel-item">
+          <img src="./swim.jpg" alt="Swimming" />
+        </div>
+        <div className="carousel-item">
+          <img src="bird.jpg" alt="Bird on a roof" />
+        </div>
+        <div className="carousel-item">
+          <img src="./lako2.jpg" alt="Picture of Lako" />
+        </div>
+      </div>
+      
+      <Displaybar />
+
+      <section className=" p-4  mx-auto container  justify-center flex flex-row ">
+        {" "}
+        <div className="font-newfont text-5xl mb-10 p-5 text-center items-center flex flex-col justify-center">
+          Categories
+        </div>
+        <div className=" container grid grid-cols-4 mt-1 mx-auto p-7 gap-x-3 font-newfont  ">
+          <div className="card w-75  hover:cursor-pointer bg-base-100 shadow-xl image-full hover:-translate-y-6 transition-all duration-100 hover:brightness-200">
+            <figure>
+              <img
+                className="h-full w-full "
+                src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2202&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Mental Health"
+              />
+            </figure>
+            <div className="card-body flex flex-row justify-center">
+              <h2 className="card-title text-center ">Mental Health</h2>
             </div>
+          </div>
+
+          <div className="card w-75 bg-base-100 image-full  hover:cursor-pointer hover:-translate-y-6 transition-all duration-100 hover:brightness-200 ">
+            <figure>
+              <img src="./hut.jpg" alt="Travel" />
+            </figure>
+            <div className="card-body flex flex-row justify-center">
+              <h2 className="card-title text-center">Travel</h2>
+            </div>
+          </div>
+
+          <div className="card w-75 bg-base-100 shadow-xl  hover:cursor-pointer image-full hover:-translate-y-6 transition-all duration-100 hover:brightness-200">
+            <figure>
+              <img src="friedrice.jpg" alt="Abstract Technology" />
+            </figure>
+            <div className="card-body flex flex-row justify-center">
+              <h2 className="card-title text-center">Food & Recipes</h2>
+            </div>
+          </div>
+          <div className="card w-75 bg-base-100 hover:cursor-pointer shadow-xl image-full hover:-translate-y-6 transition-all duration-100 hover:brightness-200 ">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=2973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="building"
+              />
+            </figure>
+            <div className="card-body flex flex-row justify-center">
+              <h2 className="card-title text-center">Love & Relationships</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="ml-16 container text-justify mx-auto mb-10 font-navFont mt-4">
+        <div className="flex justify-center ">
+          <div className="flex text-black  px-9 duration-150 hover:animate-bounce  hover:border-b-2 hover:border-neworange hover:cursor-pointer border-black font-newfont">
+            View All Categories{" "}
+            <svg
+              className="w-4 ml-3"
+              dataSlot="icon"
+              fill="none"
+              strokeWidth={2}
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              />
+            </svg>
           </div>
         </div>
       </div>
-      <section className=" p-4  mx-auto container  justify-center ">
-        {" "}
-        <p className="font-navfont text-5xl border-pink-50 border-b-2 mb-10 p-5 text-center">
-          -Categories-
-        </p>
-        <div className="mx-auto p-5">
-          <div className="grid grid-cols-3 gap-5 mb-10">
-            <div className="card w-96 glass">
-              <figure>
-                <img
-                  className="max-h-48 overflow-hidden w-full object-fill"
-                  src="/Travel.jpg"
-                  alt="home!"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title justify-center text-3xl text-gray-800 ">
-                  Travel
-                </h2>
-                <p className="text-center text-lg text-black">
-                  How to park your car at your garage?
-                </p>
-                <div className="card-actions justify-center p-2 ">
-                  <button className="btn btn-outline px-10  hover:bg-pink-300  hover:border-pink-300 transition duration-400">
-                    Explore
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="card w-96 glass">
-              <figure>
-                <img
-                  className="max-h-48 overflow-hidden w-full object-fill"
-                  src="/Waakye.jpg"
-                  alt="car!"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title justify-center text-3xl text-gray-800">
-                  Food
-                </h2>
-                <p className="text-center text-lg text-black">
-                  How to park your car at your garage?
-                </p>
-                <div className="card-actions justify-center p-2">
-                  <button className="btn btn-outline px-10  hover:bg-pink-300   hover:border-pink-300 transition duration-400">
-                    Explore
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="card w-96 glass">
-              <figure>
-                <img
-                  className="max-h-48 overflow-hidden w-full object-fill "
-                  src="/Mentalhealth.jpg"
-                  alt="Mental Health!"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title justify-center text-3xl text-gray-800">
-                  Mental Health
-                </h2>
-                <p className="text-center text-lg text-black">
-                  How to park your car at your garage?
-                </p>
-                <div className="card-actions justify-center  p-2">
-                  <button className="btn btn-outline px-10  hover:bg-pink-300  hover:border-pink-300 transition duration-400">
-                    Explore
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
+
       <section className=" p-4 mx-auto container  justify-center ">
         {" "}
-        <p className="font-navfont text-5xl border-green-50 border-b-2 mb-10 pb-7  p-5 text-center">
+        <p className="font-newfont text-5xl  mb-10 pb-7  p-5 text-center">
           -Latest Posts-
         </p>
-        <div className="grid grid-cols-5 gap-x-7 ">
-          <div className="col-span-3 ">
-            <div className="card lg:card-side bg-base-100 shadow-xl rounded-md hover:shadow-2xl hover:bg-green-300 hover:shadow-green-300 shadow-pink-300 duration-700">
+        <div className="grid grid-cols-6 gap-x-7 font-save max-w-[1000px] ">
+          <div className="col-span-4 ">
+            <div className="card lg:card-side bg-base-100  rounded-md cursor-pointer  duration-700 hover:animate-pulse p-2">
               <figure>
                 <img
-                  src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-                  alt="Album"
+                  className="overflow-hidden h-[350px] w-[400px] object-cover "
+                  src="dog.jpg"
+                  alt="Otis"
                 />
               </figure>
               <div className="card-body ">
-                <h2 className="card-title font-semibold">New album is released!</h2>
-                <p className="">Click the button to listen on Spotiwhy app.</p>
+                <h2 className="card-title font-normal">
+                Pet Parenthood: Lessons Learned from My Furry Friends
+                </h2>
+                <p className="opacity-25">04 April,2024</p>
                 <div className="card-actions justify-start">
-                  <button className="btn btn-outline px-10 hover:bg-pink-300 hover:border-pink-300 hover:text-white">Read more..</button>
+                  <button className="btn btn-outline px-10 hover:bg-neworange hover:border-neworange  hover:text-black">
+                    Read more
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-span-2 min-w-full p-5 bg-white border rounded-lg mx-auto">
-          <a href="/">
-          <div className="flex flex-col border py-5 px-5 rounded-xl hover:shadow-2xl hover:shadow-pink-300 duration-700" >
-              <div className="flex ">
-                <img
-                  src="/Travel.jpg"
-                  className="overflow-hidden object-fill rounded-lg w-24 h-24 "
-                ></img>
-                <div className="p-5 flex-row">
-                  <h1 className="font-semibold ">My Forever Love</h1>
-                  <p1 className="font-light ">This is the Description</p1>
+
+          <div className="col-span-2 w-[600px] rounded-lg mx-auto font-navFont p-2">
+            <a href="/">
+              <div className="flex flex-col border-l py-5 px-5 hover:border-swanblack hover:animate-pulse duration-700">
+                <div className="flex">
+                  <img
+                    src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    className="overflow-hidden object-cover rounded-lg w-[200px] h-[200px] flex-none"
+                  ></img>
+                  <div className="p-5 flex-row">
+                    <h1 className="font-semibold font-save text-sm ">
+                    Culinary Adventures: My Quest for the Perfect Homemade Pizza
+                    </h1>
+                    <p1 className="font-light opacity-25 text-sm ">03 March,2024</p1>
+                  </div>
                 </div>
               </div>
-
-            </div>
-
-          </a>
-          <a href="/">
-          <div className="flex flex-col border py-5 px-5 rounded-xl hover:shadow-2xl  hover:shadow-pink-300 shadow-pink-300 duration-1000 mt-5" >
-              <div className="flex ">
-                <img
-                  src="/Travel.jpg"
-                  className="overflow-hidden object-fill rounded-lg w-24 h-24 "
-                ></img>
-                <div className="p-5 flex-row">
-                  <h1 className="font-semibold ">My Forever Love</h1>
-                  <p1 className="font-light ">This is the Description</p1>
-                </div>
-              </div>
-
-            </div>
-
-          </a>
-        
+            </a>
             
+            <a href="/">
+              <div className="flex flex-col border-l hover:border-swanblack py-5 px-5 hover:animate-pulse duration-700 mt-2 ">
+                <div className="flex ">
+                  <img
+                    src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    className="overflow-hidden  image-full object-cover rounded-lg w-[200px] h-[200px] flex-none"
+                  ></img>
+                  <div className="p-5 flex-row">
+                    <h1 className="font-semibold font-sans text-sm ">
+                    Running Free: How I Fell in Love with Marathon Training
+                    </h1>
+                    <p1 className="font-light opacity-25 text-sm ">10 February,2024</p1>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div className="container text-justify mx-auto mb-16 font-navFont mt-4">
+          <div className="flex justify-center ">
+            <div className="flex text-black  px-9 duration-150 hover:animate-bounce  hover:border-b-2 hover:border-neworange hover:cursor-pointer border-black font-newfont">
+              Go to Blogs {" "}
+              <svg
+                className="w-4 ml-3"
+                dataSlot="icon"
+                fill="none"
+                strokeWidth={2}
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </section>
+
+      <Mentalhealth/>
     </div>
   );
 };
