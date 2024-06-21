@@ -90,7 +90,7 @@ const Displaybar = () => {
       </figure>
       <div className="card-body h-full -mt-5 -ml-4 flex-grow">
 
-        <h2 className="card-title text-start text-xs font-save">
+        <h2 className="card-title text-start text-xs font-normal font-save">
         My Serene Spa Day Experience: Rejuvenating Mind, Body, and Soul
         </h2>
 
@@ -109,7 +109,7 @@ const Displaybar = () => {
         />
       </figure>
       <div className="card-body h-full -mt-5 -ml-4 flex-grow">
-        <h2 className="card-title text-start text-xs  font-save">
+        <h2 className="card-title text-start text-xs font-normal font-save">
         Love's Tender Embrace: Nurturing Heart and Soul Through Feelings
         </h2>
 
@@ -127,7 +127,7 @@ const Displaybar = () => {
         />
       </figure>
       <div className="card-body h-full -mt-5 -ml-4 flex-grow">
-        <h2 className="card-title text-start text-xs font-save">
+        <h2 className="card-title text-start text-xs font-normal font-save">
         Waakye Wonderland: A Flavorful Journey Through Ghana's Favorite Dish
         </h2>
 
@@ -145,7 +145,7 @@ const Displaybar = () => {
         />
       </figure>
       <div className="card-body h-full -mt-5 -ml-4 flex-grow">
-        <h2 className="card-title text-xs font-save">
+        <h2 className="card-title text-xs font-save font-normal">
         Shaping a Stronger You: Embracing the Fitness Journey
         </h2>
 
@@ -163,7 +163,7 @@ const Displaybar = () => {
         />
       </figure>
       <div className="card-body h-full -mt-5 -ml-4 flex-grow">
-        <h2 className="card-title text-start text-xs font-save">
+        <h2 className="card-title text-start text-xs font-save font-normal">
         The Magic of Reading: Exploring Worlds Through Words
         </h2>
 
@@ -181,7 +181,7 @@ const Displaybar = () => {
         />
       </figure>
       <div className="card-body h-full -mt-5 -ml-4 flex-grow">
-        <h2 className="card-title text-start text-xs font-save">
+        <h2 className="card-title text-start text-xs font-save font-normal">
         Dearest Lako: Where Life's Tales Unfold
         </h2>
 

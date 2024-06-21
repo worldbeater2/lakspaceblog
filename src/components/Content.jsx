@@ -1,7 +1,7 @@
 import React from "react";
 import Markdown from "react-markdown";
 import { useParams } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -98,23 +98,34 @@ const Content = ({blogs}) => {
           <div className="col-span-2 md:gap-8 lg:gap-8 ">
             <img
               src={`${blog.attributes.coverImg.data.attributes.url}`}
-              className="object-cover  w-full h-56 rounded-md "
+              className="object-cover w-full h-56 rounded-md "
             />
-            <h1 className="font-bold my-1 text-2xl pt-4">{blog.attributes.blogTitle}</h1>
-            <div className="pt-5">
+            <h1 className="font-bold my-1 text-4xl pt-4 font-newfont ">{blog.attributes.blogTitle}</h1>
+            <div className="pt-5 font-save font-light">
               <Markdown className="text-justify line-break">{blog.attributes.blogContent}</Markdown>
             </div>
           </div>
           <div className="w-full bg-white rounded-xl overflow-hidden shadow-md max-h-[250px] py-5 mx-auto">
             <div>
                 <img className="h-32 w-32 rounded-full p-2 mx-auto object-cover" src="/image.webp" ></img>
-                <h1 className="font-bold text-center text-2xl text-gray-900 pt-3">Lako Apo</h1>
-                <p className="text-center font-medium text-pink-400 ">Author</p>
+                <h1 className="font-bold text-center text-2xl text-gray-900 pt-3 font-newfont">Lako Apo</h1>
+                <p className="text-center font-medium text-neworange font-save">Author</p>
             </div>
            
           </div>
         </div>
+        <div className="flex justify-center mt-5">
+            <Link to="/blogapp">
+              <a className="link mr-5">Back</a>
+            </Link>
+
+            <Link to="/homepage">
+              <a className="link">Home</a>
+            </Link>
+          </div>
+    
       </div>
+      
     </section>
   );
 };

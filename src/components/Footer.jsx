@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => {
-  return <footer className="mt-4 footer footer-center p-10 text-base-content rounded bg-pink-100">
+  return <footer className="mt-4 footer footer-center p-10 text-base-content rounded bg-neworange bg-opacity-75">
   <nav className="grid grid-flow-col gap-4">
     <a className="link link-hover">About me</a>
     <a className="link link-hover">Contact</a>

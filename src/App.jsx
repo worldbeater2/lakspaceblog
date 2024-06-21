@@ -1,7 +1,6 @@
 import useFetch from "./hooks/useFetch";
 import { About, BlogContent, Homeview } from "./pages";
 import BlogPage from "./pages/BlogPage";
-
 import { Routes, Route } from "react-router-dom";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
@@ -9,7 +8,7 @@ import Categories from "./pages/Categories";
 
 function App() {
   let { loading, data, error } = useFetch(
-     "https://lakspaceblog.onrender.com/api/blogs?populate=*"
+ "https://lakspaceblog.onrender.com/api/blogs?populate=*"
   );
   if (loading)
     return (

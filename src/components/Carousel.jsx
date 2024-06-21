@@ -11,19 +11,19 @@ const Carousel = () => {
         </div>
       </div>
       <div className="flex p-6 mx-auto container justify-center ">
-        <h1 className="font-navfont text-6xl">
-          Hi! I'm <span className="text-pink-300">Lako</span> Apo
+        <h1 className="font-newfont text-6xl">
+          Hi! I'm <span className="text-neworange">Lako</span> Apo
         </h1>
       </div>
       <div className="flex p-6 mx-auto container justify-center ">
-        <h1 className="max-w-5xl text-2xl tracking-wide text-center">
+        <h1 className="max-w-5xl text-2xl tracking-wide text-center font-save">
           Several people struggle to pronounce my first name, Lako, so we’ve
           settled for Laks. I used to write short poems till I realized I wanted
           to do more than just poems. I’m a Ghanaian living in Ghana.
         </h1>
       </div>
       <div className="flex mb-4 mx-auto container justify-center ">
-        <h1 className="max-w-5xl text-2xl text-pink-300">Follow Me</h1>
+        <h1 className="max-w-5xl text-2xl text-neworange font-save">Follow Me</h1>
         <a href="/" className="ml-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
