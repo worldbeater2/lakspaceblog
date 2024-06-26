@@ -4,6 +4,8 @@ import BlogPage from "./pages/BlogPage";
 import { Routes, Route } from "react-router-dom";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 
 function App() {
@@ -27,7 +29,9 @@ function App() {
 
   return (
     <div>
+      <ScrollToTop />
       <Routes>
+     
         <Route path="/" element={<Homeview blogs = {data ? data : ""} />}></Route>
 
         <Route
