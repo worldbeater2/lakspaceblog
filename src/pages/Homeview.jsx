@@ -3,9 +3,11 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import HomeviewContent from '../components/HomeviewContent';
 
-const Homeview = () => {
+const Homeview = ({blogs}) => {
   return (
-    <div> <Navbar />,<HomeviewContent />, <Footer /></div>
+    <div> <Navbar />,
+    <HomeviewContent blogs ={blogs} />, 
+    <Footer /></div>
   )
 }
 

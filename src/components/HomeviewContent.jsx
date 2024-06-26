@@ -5,13 +5,21 @@ import Mentalhealth from "./Mentalhealth";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 
-const HomeviewContent = () => {
+
+const HomeviewContent = ({blogs}) => {
+
+
+
+console.log(blogs)
+  
   useEffect(() => {
     AOS.init();
   }, [])
   return (
+    
     <div className="w-full overflow-x-hidden -mt-5">
       <div className="mx-auto w-screen">
         <Hero />
@@ -41,7 +49,7 @@ const HomeviewContent = () => {
         </div>
       </div>
       
-      <Displaybar />
+      <Displaybar blogs={blogs} />
 
       <section className=" p-4  mx-auto container -mt-16 justify-center flex flex-row ">
         {" "}
@@ -98,7 +106,7 @@ const HomeviewContent = () => {
             View All Categories{" "}
             <svg
               className="w-4 ml-3"
-              dataSlot="icon"
+            
               fill="none"
               strokeWidth={2}
               stroke="currentColor"
@@ -136,7 +144,7 @@ const HomeviewContent = () => {
                 <h2 className="card-title font-normal">
                 Pet Parenthood: Lessons Learned from My Furry Friends
                 </h2>
-                <p className="opacity-25">04 April,2024</p>
+                <p1 className="opacity-25">04 April,2024</p1>
                 <div className="card-actions justify-start">
                   <button className="btn btn-outline px-10 hover:bg-neworange hover:border-neworange  hover:text-black" data-aos="zoom-in" data-aos-offset="100"   data-aos-delay="50"    data-aos-duration="1000">
                     Read more
@@ -189,7 +197,7 @@ const HomeviewContent = () => {
               Go to Blogs {" "}
               <svg
                 className="w-4 ml-3"
-                dataSlot="icon"
+           
                 fill="none"
                 strokeWidth={2}
                 stroke="currentColor"
