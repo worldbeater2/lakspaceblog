@@ -19,9 +19,7 @@ const Displaybar = ({ blogs }) => {
 
   const randomBlogs = getRandomBlogs(blogs);
 
- 
 
-  console.log(randomBlogs);
 
   return (
     <div className="w-screen p-20 -mt-5 flex flex-row h-screen">

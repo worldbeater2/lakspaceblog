@@ -12,6 +12,12 @@ import { Link } from "react-router-dom";
 const HomeviewContent = ({blogs}) => {
 
 
+  const sortedBlogs = blogs.data.sort((a, b) => b.id - a.id);
+
+  const topBlog = sortedBlogs[0];
+  const secondTopBlog = sortedBlogs[1];
+  const thirdTopBlog = sortedBlogs[2];
+
 
 console.log(blogs)
   
@@ -136,63 +142,72 @@ console.log(blogs)
               <figure>
                 <img
                   className="overflow-hidden h-[350px] w-[400px] object-cover "
-                  src="dog.jpg"
+                  src={`${topBlog.attributes.coverImg.data.attributes.url}`}
                   alt="Otis"
                 />
               </figure>
               <div className="card-body ">
                 <h2 className="card-title font-normal">
-                Pet Parenthood: Lessons Learned from My Furry Friends
+               {topBlog.attributes.blogTitle}
                 </h2>
+                
                 <p1 className="opacity-25">04 April,2024</p1>
                 <div className="card-actions justify-start">
+                <Link to={`/blog/${topBlog.id}`}>
                   <button className="btn btn-outline px-10 hover:bg-neworange hover:border-neworange  hover:text-black" data-aos="zoom-in" data-aos-offset="100"   data-aos-delay="50"    data-aos-duration="1000">
                     Read more
                   </button>
+                </Link>
                 </div>
               </div>
             </div>
           </div>
 
+          
           <div className="col-span-2 w-[600px] rounded-lg mx-auto font-navFont p-2">
-            <a href="/">
+            <Link to={`/blog/${secondTopBlog.id}`}>
               <div className="flex flex-col border-l py-5 px-5  hover:border-neworange duration-700">
                 <div className="flex">
                   <img
-                    src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src= {`${secondTopBlog.attributes.coverImg.data.attributes.url}`}
                     className="overflow-hidden object-cover rounded-lg w-[200px] h-[200px] flex-none"
                   ></img>
                   <div className="p-5 flex-row">
                     <h1 className="font-semibold font-save text-sm ">
-                    Culinary Adventures: My Quest for the Perfect Homemade Pizza
+                    {secondTopBlog.attributes.blogTitle}
                     </h1>
                     <p1 className="font-light opacity-25 text-sm ">03 March,2024</p1>
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
+     
             
-            <a href="/">
+      <Link to={`/blog/${thirdTopBlog.id}`}>
               <div className="flex flex-col border-l  hover:border-neworange py-5 px-5 duration-700 mt-2 ">
                 <div className="flex ">
                   <img
-                    src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src= {`${thirdTopBlog.attributes.coverImg.data.attributes.url}`}
                     className="overflow-hidden  image-full object-cover rounded-lg w-[200px] h-[200px] flex-none"
                   ></img>
                   <div className="p-5 flex-row">
                     <h1 className="font-semibold font-sans text-sm ">
-                    Running Free: How I Fell in Love with Marathon Training
+                    {thirdTopBlog.attributes.blogTitle}
                     </h1>
                     <p1 className="font-light opacity-25 text-sm ">10 February,2024</p1>
                   </div>
                 </div>
               </div>
-            </a>
+
+
+      </Link>
           </div>
         </div>
+
         <div className="container text-justify mx-auto mb-16 font-navFont mt-4">
         
           <div className="flex justify-center ">
+          <Link to={`/blogapp`}>
             <div className="flex text-black  px-9 duration-150 hover:animate-bounce  hover:border-b-2 hover:border-neworange hover:cursor-pointer border-black font-newfont" data-aos="zoom-in" data-aos-offset="100"   data-aos-delay="50"    data-aos-duration="1000">
               Go to Blogs {" "}
               <svg
@@ -212,6 +227,7 @@ console.log(blogs)
                 />
               </svg>
             </div>
+          </Link>
           </div>
         </div>
         

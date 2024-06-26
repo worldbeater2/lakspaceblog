@@ -2,6 +2,7 @@ import React from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 
 const Mentalhealth = () => {
@@ -356,11 +357,12 @@ const Mentalhealth = () => {
         </div>
         <div className="container text-justify mx-auto mb-16 font-navFont mt-10">
           <div className="flex justify-center ">
+          <Link to={"/resources"}>
             <div className="flex text-black  px-9 duration-150 hover:animate-bounce  hover:border-b-2 hover:border-neworange hover:cursor-pointer border-black font-newfont" data-aos="zoom-in" data-aos-offset="100"   data-aos-delay="50"    data-aos-duration="1000">
               Explore Resources {" "}
               <svg
                 className="w-4 ml-3"
-                dataSlot="icon"
+  
                 fill="none"
                 strokeWidth={2}
                 stroke="currentColor"
@@ -375,6 +377,7 @@ const Mentalhealth = () => {
                 />
               </svg>
             </div>
+            </Link>
           </div>
         </div>
       </div>
