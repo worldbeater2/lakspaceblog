@@ -49,26 +49,7 @@ const Blogs = ({ blogs }) => {
             ];
           })}
 
-          {/* {blogs1.map((blog) => {
-            return [
-              <Link to={`/blog/${blog.id}`}>
-                <div className="card w-96 bg-base-100 shadow-xl image-full">
-                  <figure>
-                    <img src={blog.coverImg} alt="blogimage" />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">{blog.title}</h2>
-                    <p>{blog.desc}</p>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-outline hover:border-pink-300 text-white hover:bg-pink-300 focus:ring-0 ">
-                        Read me
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </Link>,
-            ];
-          })} */}
+
         </div>
       </div>
     </section>

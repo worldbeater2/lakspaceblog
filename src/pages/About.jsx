@@ -4,14 +4,25 @@ import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
 import { Link } from "react-router-dom";
 
+/**
+ * About component renders a section containing information about the author and a link to the homepage and blog page.
+ * @returns {JSX.Element} A React component containing the About section.
+ */
 const About = () => {
+  // Return a JSX element containing the About section.
   return (
     <div>
+      {/* Render the Navbar component. */}
       <Navbar />,
+
+      {/* Render the Carousel component. */}
       <Carousel />,
+
+      {/* Render a section containing information about the author. */}
       <div>
         <section className="  w-screen h-[800px] text-justify font-save font-light text-lg  p-10">
           <div className="w-[900px] h-[700px] mx-auto ">
+            {/* Render a paragraph containing information about the author's creativity. */}
             <p1 className="tracking-wide" >
               My journey through life is like a kaleidoscope, always shifting
               and blending colors to create something new and exciting. From
@@ -21,6 +32,7 @@ const About = () => {
             <br></br>
             <br></br>
 
+            {/* Render a paragraph containing information about the author's eclectic hobbies. */}
             <p2 className=" my-6 tracking-wide">
               Beyond creativity, I'm a connoisseur of quirky hobbies. Whether
               it's experimenting with fusion cuisine or collecting vintage comic
@@ -32,6 +44,7 @@ const About = () => {
             <br></br>
             <br></br>
 
+            {/* Render a paragraph containing information about the author's goal to create meaningful connections. */}
             <p3 className=" my-6  tracking-wide">
               As I navigate through this whimsical journey called life, my
               sights are set on creating meaningful connections and spreading
@@ -43,6 +56,7 @@ const About = () => {
             <br></br>
             <br></br>
 
+            {/* Render a paragraph containing information about the author's love for exploration. */}
             <p3 className=" my-6  tracking-wide">
               When I'm not busy chasing creative sparks, you'll likely find me
               exploring hidden gem cafes for the perfect cup of chai latte or
@@ -54,10 +68,12 @@ const About = () => {
             </p3>
 
             <div className="flex justify-center mt-10">
+              {/* Render a link to the homepage. */}
               <Link to="/homepage">
                 <a className="link mr-5">Back</a>
               </Link>
 
+              {/* Render a link to the blog page. */}
               <Link to="/blogapp">
                 <a className="link">View Blog</a>
               </Link>
@@ -65,6 +81,7 @@ const About = () => {
           </div>
         </section>
       </div>
+      {/* Render the Footer component. */}
       <Footer />
     </div>
   );

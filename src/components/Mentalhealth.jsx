@@ -12,19 +12,22 @@ const Mentalhealth = () => {
 
   return (
     <>
-      <div className="w-screen h-[700px]">
-        <p className="font-newfont text-5xl mb-10 pb-7 p-5 text-center " data-aos="fade-in"   data-aos-delay="600" >
-          You're Not Alone! Reach Out
+      <div className="w-screen h-[700px] p-10">
+        <p className="font-newfont text-3xl mb-10 pb-7 p-5 text-center " data-aos="fade-in"   data-aos-delay="600" >
+        Feeling Down? Reach Out to These Lifelines{" "}
         </p>
 
-        <div className="p-4 mx-auto container  flex flex-row justify-center">
-          <div className="flex flex-row w-full">
-            <div className="w-2/3 p-5 font-save">
-              <div className="bg-opacity-60 border- bg-neworange shadow-lg rounded-md p-5 h-96 overflow-y-scroll">
-                <h2 className="text-3xl mb-4 font-newfont"  >
-                  Feeling Down? Reach Out to These Lifelines{" "}
+        <div className="p-4 mx-auto container  justify-center">
+
+          <div className="flex flex-row w-full ">
+
+            <div className="w-8/12 p-5 font-save">
+
+              <div className="bg-opacity-60 border bg-neworange  rounded-3xl p-5 h-96 overflow-y-scroll">
+                <h2 className="text-base mb-4 font-save"  >
+                 
                 </h2>
-                <ul className="list-disc pl-10 pb-10">
+                <ul className="list-disc pl-10 pb-10 ">
                   <li>
                     <strong>Algeria:</strong> 0021 3983 2000 58 (Algerian
                     Society for the Prevention of Suicide)
@@ -350,7 +353,8 @@ const Mentalhealth = () => {
               </div>
             </div>
 
-            <div className="font-newfont text-5xl mb-10 p-5 text-center items-center flex flex-col justify-center w-1/3" data-aos="slide-left"   data-aos-delay="600"  data-aos-duration="1000">
+
+            <div className="font-newfont text-5xl mb-10 p-5 text-center items-center flex flex-col justify-center w-1/3" data-aos="zoom-in"   data-aos-delay="600"  data-aos-duration="1000">
               Help Lines
             </div>
           </div>
@@ -359,7 +363,7 @@ const Mentalhealth = () => {
           <div className="flex justify-center ">
           <Link to={"/resources"}>
             <div className="flex text-black  px-9 duration-150 hover:animate-bounce  hover:border-b-2 hover:border-neworange hover:cursor-pointer border-black font-newfont" data-aos="zoom-in" data-aos-offset="100"   data-aos-delay="50"    data-aos-duration="1000">
-              Explore Resources {" "}
+              Explore More Resources {" "}
               <svg
                 className="w-4 ml-3"
   

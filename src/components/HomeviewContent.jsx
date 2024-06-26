@@ -176,6 +176,9 @@ console.log(blogs)
                     <h1 className="font-semibold font-save text-sm ">
                     {secondTopBlog.attributes.blogTitle}
                     </h1>
+                    <p className="font-light text-xs">
+          {secondTopBlog.attributes.blogDesc}
+        </p>
                     <p1 className="font-light opacity-25 text-sm ">03 March,2024</p1>
                   </div>
                 </div>
@@ -194,6 +197,9 @@ console.log(blogs)
                     <h1 className="font-semibold font-sans text-sm ">
                     {thirdTopBlog.attributes.blogTitle}
                     </h1>
+                    <p className="font-light text-xs">
+          {thirdTopBlog.attributes.blogDesc}
+        </p>
                     <p1 className="font-light opacity-25 text-sm ">10 February,2024</p1>
                   </div>
                 </div>
