@@ -8,10 +8,12 @@ import ScrollToTop from "./components/ScrollToTop";
 
 
 
+
+
 function App() {
   // Fetch data from the API
   let { loading, data, error } = useFetch(
-    "https://lakspaceblog.onrender.com/api/blogs?populate=*"
+    "https://strapi-production-ad4ed.up.railway.app/api/blogs?populate=*"
   );
 
   // Render loading spinner while data is being fetched
