@@ -11,11 +11,11 @@ const Blogs = ({ blogs }) => {
               <Link to={`/blog/${blog.id}`}>
 
                                 <div className="card w-96 relative rounded-md hover:cursor-pointer glass hover:shadow-neworange hover:shadow-sm">
-                  <figure className="relative">
+                  <figure className="relative bg-cover">
                     <img
-                      className="h-[300px] overflow-hidden  bg-cover"
+                      className="h-[300px] overflow-hidden object-cover bg-cover"
                       src={`${blog.attributes.coverImg.data.attributes.url}`}
-                      alt=""
+                      alt="Paps Beach"
                     />
                     {/* <div className="badge absolute bottom-2 right-2 bg-black bg-opacity-20 text-white p-2">
                       Travel
@@ -35,15 +35,6 @@ const Blogs = ({ blogs }) => {
                     </p>
                   </div>
                 </div>
-
-
-
-
-
-
-
-
-
 
               </Link>,
             ];
