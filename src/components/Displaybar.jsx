@@ -131,11 +131,11 @@ const Displaybar = ({ blogs }) => {
               <h2 className="card-title text-start text-xs font-normal font-save">
                 {blog.attributes.blogTitle}
               </h2>
-              <p className="font-light text-xs">
+              <p className="font-light font-save opacity-70 text-xs">
                 {blog.attributes.blogDesc.split(" ").slice(0, 20).join(" ") } </p>
 
               <div className="flex opacity-25 text-xs -mt-2 font-save">
-              <div>Jan 14, 2024</div>
+              {/* <div>Jan 14, 2024</div> */}
               </div>
             </div>
           </div>
