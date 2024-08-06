@@ -20,6 +20,7 @@ const HomeviewContent = ({ blogs }) => {
     AOS.init();
   }, []);
   return (
+  
     <div className="w-full overflow-x-hidden -mt-5">
       <div className="mx-auto w-screen">
         <Hero />
