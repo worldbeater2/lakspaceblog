@@ -13,7 +13,7 @@ import ScrollToTop from "./components/ScrollToTop";
 function App() {
   // Fetch data from the API
   let { loading, data, error } = useFetch(
-    "https://lakspaceblog.onrender.com/api/blogs?populate=*"
+    "https://lakspace.up.railway.app/api/blogs?populate=*"
   );
 
   // Render loading spinner while data is being fetched
@@ -43,7 +43,7 @@ function App() {
 
       <Routes>
         {/* Route for the homepage */}
-        <Route path="/" element={<Homeview blogs={data ? data : ""} />}></Route>
+        <Route path="/" element={<Homeview blogs={data ? data : " "} />}></Route>
 
         {/* Route for the blog post with a specific ID */}
         <Route
@@ -52,13 +52,13 @@ function App() {
         ></Route>
 
         {/* Route for the blog page */}
-        <Route path="/blogapp" element={<BlogPage blogs={data ? data : ""} />} />
+        <Route path="/blogapp" element={<BlogPage blogs={data ? data : " "} />} />
 
         {/* Route for the about page */}
         <Route path="/about" element={<About />} />
 
         {/* Route for the homepage */}
-        <Route path="/homepage" element={<Homeview blogs={data ? data : ""} />} />
+        <Route path="/homepage" element={<Homeview blogs={data ? data : " "} />} />
 
         {/* Route for the resources page */}
         <Route path="/resources" element={<Resources />} />
