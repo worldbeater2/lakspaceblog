@@ -22,13 +22,12 @@ const Displaybar = ({ blogs }) => {
 
 
   return (
-    <div className="w-screen p-20 -mt-5 flex flex-row h-screen">
-  
-  
 
+    <div className="w-screen p-20 -mt-5 flex flex-row h-screen" >
+  
 
    
-      <div className="card w-[550px] h-[650px]  relative rounded-md hover:cursor-pointer glass hover:shadow-neworange hover:shadow-sm">
+      <div className="card w-[550px] h-[650px]  relative rounded-3xl hover:cursor-pointer glass hover:shadow-neworange hover:shadow-sm">
        
         <figure className="relative">
 
@@ -62,7 +61,8 @@ const Displaybar = ({ blogs }) => {
       <div className="flex flex-col ml-5">
 
         <Link to={`/blog/${randomBlogs[1].id}`} >
-        <div className="card w-[320px] h-[320px] mb-4 relative rounded-md hover:cursor-pointer glass  hover:shadow-neworange hover:shadow-sm">
+
+        <div className="card w-[320px] h-[320px] mb-4 relative  hover:cursor-pointer glass rounded-3xl  hover:shadow-neworange hover:shadow-sm">
         <figure className="relative h-[320px] w-[320px]">
             <img
     className="object-cover h-full w-full"
@@ -119,7 +119,7 @@ const Displaybar = ({ blogs }) => {
         {blogs.sort((a, b) => b.id - a.id).slice(0, 6).map((blog) => (
 
           <Link to={`/blog/${blog.id}`} key={blog.id}>
-          <div className="card lg:card-side h-[100px] w-[500px] rounded-md border  ml-5 font-save mb-2 flex hover:cursor-pointer  hover:shadow-neworange hover:shadow-sm " key={blog.id}>
+          <div className="card lg:card-side h-[100px] w-[500px] rounded-md  bg-neworange bg-opacity-10  ml-12 font-save mb-3 flex hover:cursor-pointer  hover:shadow-sm  " key={blog.id}>
             <figure className="h-full w-[150px] flex-none">
               <img
                 className="w-full h-full object-cover overflow-hidden"
