@@ -6,7 +6,7 @@ import HomeviewContent from '../components/HomeviewContent';
 const Homeview = ({blogs}) => {
   return (
     <div> <Navbar />,
-    <HomeviewContent blogs ={blogs} />, 
+    <HomeviewContent blogs ={blogs ? blogs : ""} />, 
     <Footer /></div>
   )
 }

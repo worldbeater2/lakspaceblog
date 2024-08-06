@@ -274,7 +274,7 @@ const HomeviewContent = ({ blogs }) => {
         </div>
       </section>
 
-      <Mentalhealth />
+      {/* <Mentalhealth /> */}
     </div>
   );
 };
