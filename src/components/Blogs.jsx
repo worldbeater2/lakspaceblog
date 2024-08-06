@@ -11,7 +11,7 @@ const Blogs = ({ blogs }) => {
               <Link to={`/blog/${blog.id}`}>
 
                                 <div className="card w-96 relative rounded-md hover:cursor-pointer glass hover:shadow-neworange hover:shadow-sm">
-                  <figure className="relative bg-cover">
+                  <figure className="relative">
                     <img
                       className="h-[300px] overflow-hidden object-cover bg-cover"
                       src={`${blog.attributes.coverImg.data.attributes.url}`}
